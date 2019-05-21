@@ -28,14 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.CList = new System.Windows.Forms.ComboBox();
             this.lblResult = new System.Windows.Forms.Label();
-            this.Timer = new System.Windows.Forms.Timer(this.components);
-            this.textNum = new System.Windows.Forms.TextBox();
-            this.CountDown = new System.Windows.Forms.TextBox();
             this.lbTView = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -76,25 +72,6 @@
             this.lblResult.TabIndex = 3;
             this.lblResult.Text = "선택 : ";
             // 
-            // Timer
-            // 
-            this.Timer.Interval = 1000;
-            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
-            // 
-            // textNum
-            // 
-            this.textNum.Location = new System.Drawing.Point(12, 109);
-            this.textNum.Name = "textNum";
-            this.textNum.Size = new System.Drawing.Size(100, 21);
-            this.textNum.TabIndex = 4;
-            // 
-            // CountDown
-            // 
-            this.CountDown.Location = new System.Drawing.Point(118, 109);
-            this.CountDown.Name = "CountDown";
-            this.CountDown.Size = new System.Drawing.Size(100, 21);
-            this.CountDown.TabIndex = 5;
-            // 
             // lbTView
             // 
             this.lbTView.AutoSize = true;
@@ -110,14 +87,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 325);
             this.Controls.Add(this.lbTView);
-            this.Controls.Add(this.CountDown);
-            this.Controls.Add(this.textNum);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.CList);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "TeaBagMaker";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -130,9 +105,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox CList;
         private System.Windows.Forms.Label lblResult;
-        private System.Windows.Forms.Timer Timer;
-        private System.Windows.Forms.TextBox textNum;
-        private System.Windows.Forms.TextBox CountDown;
         private System.Windows.Forms.Label lbTView;
     }
 }

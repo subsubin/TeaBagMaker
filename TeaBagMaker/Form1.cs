@@ -65,22 +65,4 @@ namespace TeaBagMaker
             }
         }*/
 
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            if (CountOrgNum < 1)
-            {
-                this.Timer.Enabled = false;
-                this.textNum.ReadOnly = false;
-                this.textNum.Text = "";
-                MessageBox.Show("펑!", "알림",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                CountOrgNum--;
-                this.CountDown.Text = Convert.ToString(CountOrgNum);
-            }
-
-        }
-    }
 }
