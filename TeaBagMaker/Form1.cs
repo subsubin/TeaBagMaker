@@ -28,5 +28,16 @@ namespace TeaBagMaker
             if (CList.Items.Count > 0)
                 this.CList.SelectedIndex = 0;
         }
+
+        private void CList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.CList.Text != "")
+                this.lblResult.Text = orgStr + this.CList.Text;
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

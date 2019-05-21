@@ -36,12 +36,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(361, 352);
+            this.button1.Location = new System.Drawing.Point(27, 99);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "담그기!";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label1
             // 
@@ -59,15 +60,16 @@
             this.CList.Name = "CList";
             this.CList.Size = new System.Drawing.Size(121, 20);
             this.CList.TabIndex = 2;
+            this.CList.SelectedIndexChanged += new System.EventHandler(this.CList_SelectedIndexChanged);
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(27, 85);
+            this.lblResult.Location = new System.Drawing.Point(25, 67);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(81, 12);
+            this.lblResult.Size = new System.Drawing.Size(41, 12);
             this.lblResult.TabIndex = 3;
-            this.lblResult.Text = "결과가 여기에";
+            this.lblResult.Text = "선택 : ";
             // 
             // Form1
             // 
