@@ -23,7 +23,8 @@ namespace TeaBagMaker
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < SList.Length; i++) {
+            for (int i = 0; i < SList.Length; i++)
+            {
                 this.CList.Items.Add(SList[i]);
             }
             this.orgStr = lblResult.Text;
@@ -65,4 +66,5 @@ namespace TeaBagMaker
             }
         }*/
 
+    }
 }
