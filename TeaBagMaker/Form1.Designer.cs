@@ -28,15 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.CList = new System.Windows.Forms.ComboBox();
             this.lblResult = new System.Windows.Forms.Label();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.textNum = new System.Windows.Forms.TextBox();
+            this.CountDown = new System.Windows.Forms.TextBox();
+            this.lbTView = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(27, 99);
+            this.button1.Location = new System.Drawing.Point(262, 33);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -47,7 +52,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(651, 429);
+            this.label1.Location = new System.Drawing.Point(200, 304);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 12);
             this.label1.TabIndex = 1;
@@ -56,7 +61,7 @@
             // CList
             // 
             this.CList.FormattingEnabled = true;
-            this.CList.Location = new System.Drawing.Point(27, 33);
+            this.CList.Location = new System.Drawing.Point(12, 33);
             this.CList.Name = "CList";
             this.CList.Size = new System.Drawing.Size(121, 20);
             this.CList.TabIndex = 2;
@@ -65,17 +70,48 @@
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(25, 67);
+            this.lblResult.Location = new System.Drawing.Point(139, 38);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(41, 12);
             this.lblResult.TabIndex = 3;
             this.lblResult.Text = "선택 : ";
             // 
+            // Timer
+            // 
+            this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // textNum
+            // 
+            this.textNum.Location = new System.Drawing.Point(12, 109);
+            this.textNum.Name = "textNum";
+            this.textNum.Size = new System.Drawing.Size(100, 21);
+            this.textNum.TabIndex = 4;
+            // 
+            // CountDown
+            // 
+            this.CountDown.Location = new System.Drawing.Point(118, 109);
+            this.CountDown.Name = "CountDown";
+            this.CountDown.Size = new System.Drawing.Size(100, 21);
+            this.CountDown.TabIndex = 5;
+            // 
+            // lbTView
+            // 
+            this.lbTView.AutoSize = true;
+            this.lbTView.Location = new System.Drawing.Point(13, 75);
+            this.lbTView.Name = "lbTView";
+            this.lbTView.Size = new System.Drawing.Size(41, 12);
+            this.lbTView.TabIndex = 6;
+            this.lbTView.Text = "시간 : ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(349, 325);
+            this.Controls.Add(this.lbTView);
+            this.Controls.Add(this.CountDown);
+            this.Controls.Add(this.textNum);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.CList);
             this.Controls.Add(this.label1);
@@ -94,6 +130,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox CList;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.TextBox textNum;
+        private System.Windows.Forms.TextBox CountDown;
+        private System.Windows.Forms.Label lbTView;
     }
 }
 
